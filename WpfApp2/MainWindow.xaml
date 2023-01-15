@@ -1,0 +1,133 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="540" Width="960" WindowStartupLocation="CenterScreen" AllowsTransparency="True" WindowStyle="None" >
+    <Grid Background="Black">
+        <Grid.Effect>
+            <DropShadowEffect/>
+        </Grid.Effect>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="175"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <Border Background="White" Grid.Column="0" Grid.Row="0">
+            <Grid>
+                <Border Grid.Row="0">
+                    <DockPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Image Source = "/images/settings.png"  Height="90" Width="150" Margin="0,0,0,0" VerticalAlignment="Center"/>
+                    </DockPanel>
+                </Border>
+            </Grid>
+        </Border>
+
+        <Border Grid.Column="1" Grid.Row="0" Height="36" VerticalAlignment="Top" Cursor="SizeAll" x:Name="brd_Sagust" MouseDown="brd_Sagust_MouseDown">
+
+            <DockPanel Width="105" HorizontalAlignment="Right">
+                <Button Content="__" x:Name="bt_simgeDurumu" Click="bt_simgeDurumu_Click" Style="{DynamicResource miniButtons}"/>
+                <Button Content="🗖" x:Name="bt_maximized" Click="bt_maximized_Click" Style="{DynamicResource miniButtons}"/>
+                <Button Content="X" x:Name="bt_acKapa" Click="bt_acKapa_Click" Style="{DynamicResource miniButtons}"/>
+            </DockPanel>
+        </Border>
+
+        <Border Background="Black" Grid.Column="0" Grid.Row="1" >
+            <StackPanel>
+                <Button Style="{DynamicResource menuButtons}" HorizontalAlignment="Left" x:Name="bt_ekranKarti" Click="bt_ekranKarti_Click">
+                    <DockPanel Margin="10,0,0,0">
+                        <Image Source="C:\Users\omerg\Desktop\Bitirme\WpfApp2\WpfApp2\images\video-card.png" Width="30"/>
+                        <Label Content="Ekran Kartı" Width="128" Foreground="White"/>
+                    </DockPanel>
+                </Button>
+                <Button Style="{DynamicResource menuButtons}" HorizontalAlignment="Left" x:Name="bt_Islemci" Click="bt_Islemci_Click">
+                    <DockPanel Margin="10,0,0,0">
+                        <Image Source="C:\Users\omerg\source\repos\WpfApp2\WpfApp2\images\processor.png" Width="30"/>
+                        <Label Content="İşlemci                         " Foreground="White"/>
+                    </DockPanel>
+                </Button>
+                <Button Style="{DynamicResource menuButtons}" HorizontalAlignment="Left" x:Name="bt_OmerRam" Click="bt_OmerRam_Click">
+                    <DockPanel Margin="10,0,0,0">
+                        <Image Source="C:\Users\omerg\source\repos\WpfApp2\WpfApp2\images\ram.png" Width="30"/>
+                        <Label Content="RAM                            " Foreground="White"/>
+                    </DockPanel>
+                </Button>
+                <Button Style="{DynamicResource menuButtons}" HorizontalAlignment="Left"  x:Name="bt_ssd" Click="bt_ssd_Click">
+                    <DockPanel Margin="10,0,0,0">
+                        <Image Source="C:\Users\omerg\source\repos\WpfApp2\WpfApp2\images\ssd.png" Width="30"/>
+                        <Label Content="SSD                              " Foreground="white"/>
+                    </DockPanel>
+                </Button>
+                <Button Style="{DynamicResource menuButtons}" HorizontalAlignment="Left" x:Name="bt_hdd" Click="bt_hdd_Click">
+                    <DockPanel Margin="10,0,0,0">
+                        <Image Source="C:\Users\omerg\source\repos\WpfApp2\WpfApp2\images\hdd (1).png" Width="30" />
+                        <Label Content="HDD" Width="128" Foreground="White"/>
+                    </DockPanel>
+                </Button>
+                <Button Style="{DynamicResource menuButtons}" HorizontalAlignment="Left"  x:Name="bt_anakart" Click="bt_anakart_Click">
+                    <DockPanel Margin="10,0,0,0">
+                        <Image Source="C:\Users\omerg\source\repos\WpfApp2\WpfApp2\images\motherboard.png" Width="30"/>
+                        <Label Content="Anakart " Width="128" Foreground="White"/>
+                    </DockPanel >
+                </Button>
+                <Button Style="{DynamicResource menuButtons}" HorizontalAlignment="Left" x:Name="bt_monitor" Click="bt_monitor_Click">
+                    <DockPanel Margin="10,0,0,0">
+                        <Image Source="C:\Users\omerg\source\repos\WpfApp2\WpfApp2\images\desktop.png" Width="30"/>
+                        <Label Content="Monitor" Width="128" Foreground="White"/>
+                    </DockPanel>
+                </Button>
+                <Button Style="{DynamicResource menuButtons}" HorizontalAlignment="Left" x:Name="bt_kasa" Click="bt_kasa_Click">
+                    <DockPanel Margin="10,0,0,0">
+                        <Image Source="C:\Users\omerg\source\repos\WpfApp2\WpfApp2\images\high-tower.png" Width="30"/>
+                        <Label Content="Kasa" Width="128" Foreground="White"/>
+                    </DockPanel>
+                </Button>
+                <Button Style="{DynamicResource menuButtons}" HorizontalAlignment="Left" x:Name="bt_sogutucu" Click="bt_sogutucu_Click">
+                    <DockPanel Margin="10,0,0,0">
+                        <Image Source="C:\Users\omerg\source\repos\WpfApp2\WpfApp2\images\cooler.png" Width="30"/>
+                        <Label Content="Soğutucu" Width="128" Foreground="White"/>
+                    </DockPanel>
+                </Button>
+                <Button Style="{DynamicResource menuButtons}" HorizontalAlignment="Left" x:Name="bt_klavye" Click="bt_klavye_Click">
+                    <DockPanel Margin="10,0,0,0">
+                        <Image Source="C:\Users\omerg\source\repos\WpfApp2\WpfApp2\images\keyboard.png" Width="30"/>
+                        <Label Content="Klavye" Width="128" Foreground="White"/>
+                    </DockPanel>
+                </Button>
+                <Button Style="{DynamicResource menuButtons}" HorizontalAlignment="Left" x:Name="bt_mouse" Click="bt_mouse_Click">
+                    <DockPanel Margin="10,0,0,0">
+                        <Image Source="C:\Users\omerg\source\repos\WpfApp2\WpfApp2\images\wireless-mouse.png" Width="30"/>
+                        <Label Content="Mouse" Width="128" Foreground="White"/>
+                    </DockPanel>
+                </Button>
+                <Button Style="{DynamicResource menuButtons}" HorizontalAlignment="Left" x:Name="bt_kulaklik" Click="bt_kulaklik_Click">
+                    <DockPanel Margin="10,0,0,0">
+                        <Image Source="C:\Users\omerg\source\repos\WpfApp2\WpfApp2\images\headphones.png" Width="30"/>
+                        <Label Content="Kulaklık" Width="128" Foreground="White"/>
+                    </DockPanel>
+                </Button>
+                <Button Style="{DynamicResource menuButtons}" HorizontalAlignment="Left" x:Name="bt_sepet" Click="bt_sepet_Click">
+                    <DockPanel Margin="10,0,0,0">
+                        <Image Source="C:\Users\omerg\source\repos\WpfApp2\WpfApp2\images\mouse-pad.png" Width="30"/>
+                        <Label Content="Sepet" Width="128" Foreground="White"/>
+                    </DockPanel>
+                </Button>
+
+            </StackPanel>
+        </Border>
+
+        <Border Background="#FFDEDEDE" Grid.Column="1" Grid.Row="1" >
+            <Grid x:Name="Content">
+                
+            </Grid>
+        </Border>
+
+    </Grid>
+
+</Window>

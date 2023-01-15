@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Kntrl\anakart.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Kntrl\AnaSepet.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Kntrl\EkranKarti.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Kntrl\hdd.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Kntrl\Islemci.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Kntrl\kasa.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Kntrl\klavye.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Kntrl\kulaklik.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Kntrl\monitor.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Kntrl\mouse.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Kntrl\OmerRam.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Kntrl\sepet.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Kntrl\sogutucu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Kntrl\ssd.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Kntrl\anakart.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Kntrl\AnaSepet.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Kntrl\EkranKarti.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Kntrl\hdd.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Kntrl\Islemci.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Kntrl\kasa.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Kntrl\klavye.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Kntrl\kulaklik.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Kntrl\monitor.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Kntrl\mouse.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Kntrl\OmerRam.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Kntrl\sepet.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Kntrl\sogutucu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Kntrl\ssd.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
